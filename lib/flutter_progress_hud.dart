@@ -119,9 +119,12 @@ class _ProgressHUDState extends State<ProgressHUD>
       children.add(
         Visibility(
           visible: _barrierVisible,
-          child: ModalBarrier(
-            color: widget.barrierColor,
-            dismissible: false,
+          child: SizedBox(
+            height: 100,
+            child: ModalBarrier(
+              color: widget.barrierColor,
+              dismissible: false,
+            ),
           ),
         ),
       );
